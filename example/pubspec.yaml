@@ -3,7 +3,7 @@ description: Demonstrates flutter_settings_screens plugin features.
 publish_to: 'none'
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: '>=2.1.0 <3.0.0'
 
 dependencies:
   flutter:
@@ -14,7 +14,7 @@ dependencies:
   cupertino_icons: ^1.0.0
 
   #library to store the preference/settings using hive library
-  hive_flutter: ^0.3.1
+  hive_flutter: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -28,7 +28,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
