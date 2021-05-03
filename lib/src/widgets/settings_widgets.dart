@@ -677,6 +677,7 @@ class SwitchSettingsTile extends StatelessWidget {
   /// ignore all the user inputs, default = true
   final bool enabled;
   final bool value;
+
   /// on change callback for handling the value change
   final OnChanged<bool> onChange;
 
@@ -722,7 +723,7 @@ class SwitchSettingsTile extends StatelessWidget {
           onTap: () => onChanged(!value),
           enabled: enabled,
           child: _SettingsSwitch(
-            this.value ?? value,
+            value: this.value ?? value,
             onChanged: (value) => _onSwitchChange(context, value, onChanged),
             enabled: enabled,
           ),
@@ -829,6 +830,7 @@ class CheckboxSettingsTile extends StatelessWidget {
   /// subtitle for the settings tile, default = ''
   final String subtitle;
   final bool value;
+
   /// flag which represents the state of the settings, if false the the tile will
   /// ignore all the user inputs, default = true
   final bool enabled;
